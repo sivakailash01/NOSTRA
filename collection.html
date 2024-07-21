@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!--tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+<body>
+     <!-- offer bar -->
+     <div id="offer">
+        <p id="offer-para">Sign up and get 20% OFFER for your first order</p>
+        <p id="close-offer">X</p>
+     </div>
+     <!-- navbar -->
+     <nav id="navbar">
+        <h1>Nostra</h1>
+        <div id="menubar">
+            <i id="menuicon" class="fa-solid fa-bars" style="color: #000000;"></i>
+        </div>
+        <div id="navbar-para">
+            <p class="navbar-para-1"><a href="index.html">Home </a></p>
+            <p class="navbar-para-2"><a href="index.html">New Arrival</a></p>
+            <p class="navbar-para-3"><a href="index.html">Most Wanted</a></p>
+            <p class="navbar-para-4"><a href="collection.html"> Collections </a></p>
+            <p class="navbar-para-5"><a href="contact.html"> Contact Us </a></p>
+        </div>
+     </nav>
+
+     <!-- side menubar --> 
+       <section id="sidenav">
+        <div>
+            <p id="menubar-close">X</p>
+        </div>
+        <div id="menubar-para">
+          <p><a href="index.html">Home </a></p>
+          <p><a href="index.html">New Arrival</a></p>
+          <p><a href="index.html">Most Wanted</a></p>
+          <p><a href="collection.html"> Collections </a></p>
+          <p><a href="contact.html"> Contact Us</a></p>
+        </div>
+    </section>
+
+    
+
+     <!-- check box -->
+     <section class="collection-container">
+      <!-- left -->
+      <div class="collection-left">
+        <div class="occasion">
+          <h1>Occasion</h1>
+          <p><input class="check_box" type="checkbox" name="check" value="summer">Summer</p>
+          <p><input class="check_box" type="checkbox" name="check" value="party">Party</p>
+          <p><input class="check_box" type="checkbox" name="check" value="beach">Beach </p>
+        </div>
+        <div class="colors">
+          <h1>Colors</h1>
+          <p><input class="check_box" type="checkbox" name="check" value="red">Red</p>
+          <p><input class="check_box" type="checkbox" name="check" value="blue">Blue</p>
+          <p><input class="check_box" type="checkbox" name="check" value="white">White </p>
+          <p><input class="check_box" type="checkbox" name="check" value="black">black </p>
+          <p><input class="check_box" type="checkbox" name="check" value="green">Green</p>
+        </div>
+        <div class="arrivals">
+          <h1>Arrivals</h1>
+          <p><input class="check_box" type="checkbox" name="check" value="new">New</p>
+          <p><input class="check_box" type="checkbox" name="check" value="old">Old</p>
+        </div>
+      </div>
+      <!-- right -->
+      <div class="collection-right">
+        <div class="collection-input">
+          <input id="search" class="border border-black p-3 rounded-3xl m-2 " style="width: 80%;" placeholder="Search for our products..">
+        </div>
+        <h1 id="result"></h1>
+        <div id="container" class="collection-image-container">
+          <div id="imagecontainer" class="collection-img" data-filter="summer">
+            <img id="img1"src="./images/fssummer.jpg">
+            <h2 id="name1">Floral Summer Shirt</h2>
+            <p id="price1">$56</p>
+          </div>
+          <div id="imagecontainer" class="collection-img" data-filter="red">
+            <img src="./images/colimg2.jpg">
+            <h2>Summer Green</h2>
+            <p>$56</p>
+          </div>
+          <div id="imagecontainer" class="collection-img" data-filter="white">
+            <img src="./images/colimg3.jpg">
+            <h2>Party Floral Shirt</h2>
+            <p>$60</p>
+          </div>
+          <div id="imagecontainer" class="collection-img" data-filter="beach">
+            <img src="./images/colimg4.jpg">
+            <h2>Floral Summer Shirt</h2>
+            <p>$56</p>
+          </div>
+          <div id="imagecontainer" class="collection-img" data-filter="blue">
+            <img src="./images/colimg5.jpg">
+            <h2>Beach Shirt</h2>
+            <p>$66</p>
+          </div>
+          <div id="imagecontainer" class="collection-img" data-filter="blue">
+            <img src="./images/colimg6.jpg">
+            <h2>Shirt Party Red</h2>
+            <p>$80</p>
+          </div>
+          <div id="imagecontainer" class="collection-img" data-filter="party">
+            <img src="./images/colimg7.jpg">
+            <h2>Party Floral Shirt</h2>
+            <p>$60</p>
+          </div>
+          <div id="imagecontainer" class="collection-img" data-filter="old">
+            <img src="./images/colimg8.jpg">
+            <h2>Shirt Party Red</h2>
+            <p>$80</p>
+          </div>
+          <div id="imagecontainer" class="collection-img" data-filter="old">
+            <img src="./images/fssummer.jpg">
+            <h2>Floral Summer Shirt</h2>
+            <p>$56</p>
+          </div>
+        </div>
+      </div>
+      
+     </section>
+     <!-- NEWS letter -->
+  <section class="news" style="margin-top: 5rem;">
+    <div class="news-text">
+        <h1>Join our News Letter</h1>
+        <p>Signup for our email newspaper to get exclusive discounts, updates, and more </p>
+        <input type="text" placeholder="write here...." style="border: black solid 2px;"> 
+        <button class="subscribe">Subscribe</button>
+    </div>
+  </section>
+  <!-- contact -->
+   <section class="contact">
+    <h1>Nostra</h1>
+    <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+    <div class="icons">
+        <i class="fa-brands fa-instagram" style="color: #fafcff; padding: 10px;" ></i>
+        <i class="fa-brands fa-twitter" style="color: #f7f7f7; padding: 10px;"></i>
+        <i class="fa-brands fa-facebook" style="color: #f1f2f4; padding: 10px;"></i>
+        <i class="fa-brands fa-amazon" style="color: #fbfcfe; padding: 10px;"></i>
+    </div>
+    <p> &copf; 2024 Nostra.com</p>
+   </section>
+
+
+     <!-- javascript -->
+<script src="script.js"></script>
+
+</body>

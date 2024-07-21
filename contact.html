@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!--tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+<body>
+     <!-- offer bar -->
+     <div id="offer">
+        <p id="offer-para">Sign up and get 20% OFFER for your first order</p>
+        <p id="close-offer">X</p>
+     </div>
+     <!-- navbar -->
+     <nav id="navbar">
+        <h1>Nostra</h1>
+        <div id="menubar">
+            <i id="menuicon" class="fa-solid fa-bars" style="color: #000000;"></i>
+        </div>
+        <div id="navbar-para">
+            <p class="navbar-para-1"><a href="index.html">Home </a></p>
+            <p class="navbar-para-2"><a href="index.html">New Arrival</a></p>
+            <p class="navbar-para-3"><a href="index.html">Most Wanted</a></p>
+            <p class="navbar-para-4"><a href="collection.html"> Collections </a></p>
+            <p class="navbar-para-5"><a href="contact.html"> Contact Us</a></p>
+        </div>
+     </nav>
+
+     <!-- side menubar --> 
+       <section id="sidenav">
+        <div>
+            <p id="menubar-close">X</p>
+        </div>
+        <div id="menubar-para">
+            <p><a href="index.html">Home </a></p>
+            <p><a href="index.html">New Arrival</a></p>
+            <p><a href="index.html">Most Wanted</a></p>
+            <p><a href="collection.html"> Collections </a></p>
+            <p><a href="contact.html"> Contact Us</a></p>
+        </div>
+    </section>
+    <!-- middle -->
+    <div class="contact-container">
+      <form class="iform">
+          <h3>Contact Us:</h3>
+          <h4>Name</h4>
+          <input type="text" id="name" placeholder="Your Name" required>
+          <h4>Email:</h4>
+          <input type="email" id="email" placeholder="Email id" required>
+          <h4>Message:</h4>
+          <textarea id="textarea" rows="4" placeholder="Enter your Message"></textarea>
+          <button>Submit</button>
+      </form>
+  </div>
+  <!-- contact -->
+  <section class="contact">
+    <h1>Nostra</h1>
+    <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+    <div class="icons">
+        <i class="fa-brands fa-instagram" style="color: #fafcff; padding: 10px;" ></i>
+        <i class="fa-brands fa-twitter" style="color: #f7f7f7; padding: 10px;"></i>
+        <i class="fa-brands fa-facebook" style="color: #f1f2f4; padding: 10px;"></i>
+        <i class="fa-brands fa-amazon" style="color: #fbfcfe; padding: 10px;"></i>
+    </div>
+    <p> &copf; 2024 Nostra.com</p>
+   </section>
+
+    <!-- javascript -->
+<script src="script.js"></script>
+
+</body>

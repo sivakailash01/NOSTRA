@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!-- favicon -->
+    <link rel="icon" href="./images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!--  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- offer bar -->
+    <div id="offer">
+        <p id="offer-para">Sign up and get 20% OFFER for your first order</p>
+        <p id="close-offer">X</p>
+    </div>
+    <!-- navbar -->
+    <nav id="navbar">
+        <h1>Nostra</h1>
+        <div id="menubar">
+            <i id="menuicon" class="fa-solid fa-bars" style="color: #000000;"></i>
+        </div>
+        <div id="navbar-para">
+            <p class="navbar-para-1"><a href="index.html"> Home </a> </p>
+            <p class="navbar-para-2"><a href="#newarrival">New Arrival</a></p>
+            <p class="navbar-para-3"><a href="#mostwanted">Most Wanted</a></p>
+            <p class="navbar-para-4"><a href="collection.html"> Collections </a></p>
+            <p class="navbar-para-5"><a href="contact.html"> Contact Us</a></p>
+        </div>
+    </nav>
+
+    <!-- side menubar -->
+    <section id="sidenav">
+        <div>
+            <p id="menubar-close">X</p>
+        </div>
+        <div id="menubar-para">
+            <p><a href="index.html">Home </a></p>
+            <p><a href="#newarrival">New Arrival</a></p>
+            <p><a href="#mostwanted">Most Wanted</a></p>
+            <p><a href="collection.html"> Collections </a></p>
+            <p><a href="contact.html"> Contact Us</a></p>
+        </div>
+    </section>
+
+
+<!--Slider-->
+<div class="slider">
+    <div class="slider-left-button">
+        <i id="slider-left-activate" class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+    </div>
+
+    <div class="slider-content">
+        <h1>Level up your style with our</h1>
+        <h4>Summer Collections</h4> 
+        <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+    </div>
+
+
+
+    <div class="slider-image-container">
+        <img class="slider-image" src="./images/slider-img1.jpeg  width="100%">
+        <img class="slider-image" src="./images/slider-img1.jpeg" width="100%">
+        <img class="slider-image" src="./images/slider-img1.jpeg" width="100%">
+    </div>
+
+    <div class="slider-right-button">
+        
+        <i id="slider-right-activate" class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+    </div>
+</div>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./images/slider-img1.jpeg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="./images/slider-one.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="./images/slider-one.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+
+    <!-- slider  -->
+    <!-- <section class="slider">
+
+        <img id="previous" src="./images/left-chevron.png">
+
+        <div id="slider-image">
+            <img src="./images/slider-img1.jpeg">
+            <img  src="./images/slider-img1.jpeg">
+        <img  src="./images/slider-img1.jpeg">
+        </div>
+        <div class="slider-text">
+            <h1>Level up your style with our </h1>
+            <P>Summer collections</P>
+            <p id="shop">Shop now ➔</p>
+        </div>
+
+        <img id="next" src="./images/right-chevron.png">
+
+
+
+        
+
+    </section> -->
+    <!-- Brands -->
+    <section class="brand">
+        <h1>Brands</h1>
+        <div class="brand-container">
+            <div class="brand-image">
+                <img src="./images/puma.new.png">
+                <p>Puma</p>
+            </div>
+            <div class="brand-image">
+                <img src="./images/Adidas.png">
+                <p>Adidas</p>
+            </div>
+            <div class="brand-image">
+                <img src="./images/behance.png">
+                <p>Behance</p>
+            </div>
+            <div class="brand-image">
+                <img src="./images/Leaves.png">
+                <p>Leaves</p>
+            </div>
+            <div class="brand-image">
+                <img src="./images/Simple.png">
+                <p>Simple</p>
+            </div>
+            <div class="brand-image">
+                <img src="./images/Twitch.png">
+                <p>Twitch</p>
+            </div>
+            <div class="brand-image">
+                <img src="./images/Reebok.png">
+                <p>Reebok</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- customer service -->
+    <section class="customer-service">
+        <div class="experience">
+            <div class="customer-experience">
+                <h1>We Provide Best Customer Experiences</h1>
+            </div>
+            <div class="shopping-experience">
+                <p>|| We ensure that our customer have the best shopping experience</p>
+            </div>
+        </div>
+        <div class="customer-service-container">
+            <div class="customer-container">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                    stroke="currentColor" className="size-6 " style="width: 50px;">
+                    <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+
+                <h2>Original Price</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, vitae.</p>
+            </div>
+            <div class="customer-container">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                    stroke="currentColor" className="size-6" style="width: 50px;">
+                    <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                </svg>
+                <h2>Satisfaction Guarantee</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, vitae.</p>
+            </div>
+            <div class="customer-container">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                    stroke="currentColor" className="size-6" style="width: 50px;">
+                    <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M9 3.75H6.912a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859M12 3v8.25m0 0-3-3m3 3 3-3" />
+                </svg>
+                <h2>New Arrival Everyday</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, vitae.</p>
+            </div>
+            <div class="customer-container">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" strokeWidth={2} style="width: 50px;">
+                    <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+                <h2>Fast & Free Shipping</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, vitae.</p>
+            </div>
+        </div>
+    </section>
+    <!-- New Arrival -->
+    <section id="newarrival">
+        <div class="newarrival-heading">
+            <h1>New Arrivals</h1>
+        </div>
+        <div class="newarrival-image">
+            <div class="newarrival-image-1">
+                <img src="./images/newA1.jpg">
+                <button class="btn">Shop now</button>
+            </div>
+            <div class="newarrival-image-1">
+                <img src="./images/newA2.jpg">
+                <button class="btn">Shop now</button>
+            </div>
+            <div class="newarrival-image-1">
+                <img src="./images/newA3.jpg">
+                <button class="btn">Shop now</button>
+            </div>
+            <div class="newarrival-image-1">
+                <img src="./images/newA4.jpg">
+                <button class="btn">Shop now</button>
+            </div>
+        </div>
+    </section>
+    <!-- Most wanted -->
+    <section id="mostwanted">
+        <div class="mostwanted-heading">
+            <h1>Most Wanted</h1>
+        </div>
+        <div class="mostwanted-container">
+            <div class="mostwanted-image">
+                <img src="./images/mw1.jpg">
+                <p class="mw-sale">Sale</p>
+                <svg id="heart" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+            </div>
+            <div class="mostwanted-image">
+                <img src="./images/mw2.jpg">
+                <p class="mw-sale">Sale</p>
+                <svg id="heart" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+            </div>
+            <div class="mostwanted-image">
+                <img src="./images/mv3.jpg">
+                <p class="mw-sale">Sale</p>
+                <svg id="heart" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+            </div>
+            <div class="mostwanted-image">
+                <img src="./images/newA2.jpg">
+                <p class="mw-sale">Sale</p>
+                <svg id="heart" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+            </div>
+            <div class="mostwanted-image">
+                <img src="./images/newA1.jpg">
+                <p class="mw-sale">Sale</p>
+                <svg id="heart" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+            </div>
+            <div class="mostwanted-image">
+                <img src="./images/newA2.jpg">
+                <p class="mw-sale">Sale</p>
+                <svg id="heart" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+            </div>
+            <div class="mostwanted-image">
+                <img src="./images/newA3.jpg">
+                <p class="mw-sale">Sale</p>
+                <svg id="heart" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+            </div>
+            <div class="mostwanted-image">
+                <img src="./images/newA4.jpg">
+                <p class="mw-sale">Sale</p>
+                <svg id="heart" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+            </div>
+        </div>
+    </section>
+    <!-- limited offer -->
+    <section class="limited-offer">
+        <div class="offer-container">
+            <div class="offer-container-img">
+                <img src="./images/Limited-offer.jpg">
+            </div>
+            <div class="offer-container-text">
+                <h1>Limited Offer</h1>
+                <p>35% OFF on this for the first 30 customer</p>
+                <button class="offer-shop">Shop Now</button>
+            </div>
+        </div>
+    </section>
+    <!-- NEWS letter -->
+    <section class="news">
+        <div class="news-text">
+            <h1>Join our News Letter</h1>
+            <p>Signup for our email newspaper to get exclusive discounts, updates, and more </p>
+            <input type="text" placeholder="write here...." style="border: black solid 2px;">
+            <p class="subscribe">Subscribe</p>
+        </div>
+    </section>
+    <!-- contact -->
+    <section class="contact">
+        <h1>Nostra</h1>
+        <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+        <div class="icons">
+            <i class="fa-brands fa-instagram" style="color: #fafcff; padding: 10px;"></i>
+            <i class="fa-brands fa-twitter" style="color: #f7f7f7; padding: 10px;"></i>
+            <i class="fa-brands fa-facebook" style="color: #f1f2f4; padding: 10px;"></i>
+            <i class="fa-brands fa-amazon" style="color: #fbfcfe; padding: 10px;"></i>
+        </div>
+        <p> &copf; 2024 Nostra.com</p>
+    </section>
+
+
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
